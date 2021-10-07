@@ -32,7 +32,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  void setterMat(int x) {
+  void _setterMethod(int x) {
 setState(() {
   _currentValue = x;
 });
@@ -70,7 +70,7 @@ setState(() {
           IconButton(
             icon: const Icon(Icons.alternate_email_rounded, color: Colors.white),
             onPressed: () {
-              setterMat(0);
+              _setterMethod(0);
             },
           ),
         ],
@@ -157,7 +157,7 @@ setState(() {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   onPressed: () {
-                    setterMat(1);
+                    _setterMethod(1);
                   },
                 ),
                 TextButton(
@@ -171,7 +171,7 @@ setState(() {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                   onPressed: () {
-                    setterMat(2);
+                    _setterMethod(2);
                   },
                 ),
               ],
@@ -199,7 +199,7 @@ setState(() {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   onPressed: () {
-                    setterMat(3);
+                    _setterMethod(3);
 
                   },
                 ),
@@ -217,7 +217,7 @@ setState(() {
                           borderRadius: BorderRadius.circular(10))),
                   //color: Colors.lightGreen,
                   onPressed: () {
-                    setterMat(4);
+                    _setterMethod(4);
                   },
                 ),
               ],
@@ -247,7 +247,7 @@ setState(() {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)),
                   onPressed: () {
-                    setterMat(8);
+                    _setterMethod(8);
                   },
                 ),
                 OutlinedButton(
@@ -261,7 +261,7 @@ setState(() {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                   onPressed: () {
-                    setterMat(7);
+                    _setterMethod(7);
                   },
                 ),
               ],
@@ -291,7 +291,7 @@ setState(() {
               ),
               child: IconButton(
                 onPressed: () {
-                  setterMat(6);
+                  _setterMethod(6);
                 },
                 icon: Icon(Icons.blur_circular_sharp),
                 iconSize: 40,
@@ -308,7 +308,7 @@ setState(() {
               //highlightColor: Color(0xffF2B035),
               child: Icon(Icons.airplanemode_on_rounded, size: 40),
               onTap: () {
-                setterMat(9);
+                _setterMethod(9);
 
               },
             ),
@@ -325,7 +325,7 @@ setState(() {
                 child: Icon(Icons.navigation),
                 backgroundColor: Colors.green,
                 foregroundColor: Colors.white,
-                onPressed: () => {setterMat(5)},
+                onPressed: () => {_setterMethod(5)},
               ),
             ),
           ),
