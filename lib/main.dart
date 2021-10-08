@@ -33,9 +33,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   void _setterMethod(int x) {
-setState(() {
-  _currentValue = x;
-});
+    setState(() {
+      _currentValue = x;
+    });
   }
 
   List<String> _names = [
@@ -68,7 +68,8 @@ setState(() {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.alternate_email_rounded, color: Colors.white),
+            icon: Image.asset("Images/rotate-right.png",
+                fit: BoxFit.cover, height: 20, width: 20, color: Colors.white),
             onPressed: () {
               _setterMethod(0);
             },
@@ -97,9 +98,8 @@ setState(() {
             margin: EdgeInsets.all(5),
             padding: EdgeInsets.all(5),
             decoration: BoxDecoration(
-              color: Color(0xff2B8C32),
-              borderRadius: BorderRadius.circular(5)
-            ),
+                color: Color(0xff2B8C32),
+                borderRadius: BorderRadius.circular(5)),
             child: Text(
               "${_names[_currentValue]}",
               style: TextStyle(fontSize: 18),
@@ -200,7 +200,6 @@ setState(() {
                       borderRadius: BorderRadius.circular(10)),
                   onPressed: () {
                     _setterMethod(3);
-
                   },
                 ),
                 ElevatedButton(
@@ -309,7 +308,6 @@ setState(() {
               child: Icon(Icons.airplanemode_on_rounded, size: 40),
               onTap: () {
                 _setterMethod(9);
-
               },
             ),
           ),
@@ -318,31 +316,46 @@ setState(() {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
             ),
-            height: 75,
-            width: 75,
-            child: FittedBox(
-              child: FloatingActionButton(
-                child: Icon(Icons.navigation),
-                backgroundColor: Colors.green,
-                foregroundColor: Colors.white,
-                onPressed: () => {_setterMethod(5)},
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Image.asset(
+                  'Images/facebook.png',
+                  height: 80,
+                  width: 60,
+                  color: Colors.black,
+                  filterQuality: FilterQuality.high,
+                ),
+                FittedBox(
+                  child: FloatingActionButton(
+                    child: Icon(Icons.navigation),
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                    onPressed: () => {_setterMethod(5)},
+                  ),
+                ),
+                Image.asset(
+                  'Images/twitter.png',
+                  height: 80,
+                  width: 60,
+                  color: Colors.black,
+                  filterQuality: FilterQuality.high,
+                ),
+              ],
             ),
           ),
+
+          /*Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+
+            ],
+          )*/
         ],
       )),
     );
   }
 }
-
-
-
-
-
-
-
-
-
 
 /*
 class MyApp extends StatelessWidget {
