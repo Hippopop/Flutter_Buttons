@@ -22,5 +22,6 @@ here how the app looks. It will just tell you all the buttons names. When the bu
 Kinda fun! Hahahh.
 Click to see the image properly.
 
-![Screenshot_1633893533](https://user-images.githubusercontent.com/64703325/137915149-7183db05-e2b5-4b3a-b72a-31ecc9228ee8.png)
+![Screenshot_1633450677](https://user-images.githubusercontent.com/64703325/137915338-42c86ead-7a5c-412b-a70f-1f3cb1ddca5c.png)
+
 
